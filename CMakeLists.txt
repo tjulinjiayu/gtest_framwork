@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 2.8)
+project(ExampleProject)
+
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_BUILD_TYPE "Debug")
+
+include_directories(src)
+
+add_subdirectory(src)
+add_subdirectory(test)
+add_subdirectory(lib/googletest)
